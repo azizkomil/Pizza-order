@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/Pizza-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./main.css">
+    <title>Pizza Mario</title>
+</head>
+<body>
+    <main>
+        <div class="container pizza">
+            <div class="menu">
+                <div class="user">
+                    <h1>Pizza Mario</h1>
+                    <label for="">Name: </label><input type="text" placeholder="Name:" size="23" id="username"><br>
+                    <label for="">Number: </label><input type="number" placeholder="Number:" size="20" id="usernumber"><br>
+                    <label for="">Adress: </label><input type="text" placeholder="Addres:" size="22" id="useraddres">
+                </div>
+                <div class="height">
+                    <h3>Dough parameters:</h3>
+                    <select  id="pizzasize">
+                        <option value="none" disabled selected>none</option>
+                        <option value="small">Thin</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Big">Thick</option>
+                    </select>
+                </div>
+                <div class="width" id="size">
+                    <label for="size">
+                        <input type="radio" id="size" name="razmer" value="25">
+                        25sm
+                    </label>
+                    <label for="size1">
+                        <input type="radio" id="size1" name="razmer"  value="30">
+                        30sm
+                    </label>
+                    <label for="size2">
+                        <input type="radio" id="siz2"  name="razmer" value="35">
+                        35sm
+                    </label>
+                </div>
+                
+                <div class="ustudagilar" id="ustuda">
+                    <label for="k">
+                        <input type="checkbox" value=" Tomato" id="k">
+                        Tomato
+                    </label>
+                    <label for="m">
+                        <input type="checkbox" value=" Turkey meat " id="m">
+                        Turkey meat
+                    </label>
+                    <label for="p">
+                        <input type="checkbox" value=" Olive " id="p">
+                        Olive
+                    </label>
+                    <label for="t">
+                        <input type="checkbox" value=" Pickled cucumber " id="t">
+                        Pickled cucumber
+                    </label>
+                    <label for="q">
+                        <input type="checkbox" value=" Mushroom " id="q">
+                        Mushroom
+                    </label>
+                    <label for="qo">
+                        <input type="checkbox" value=" Horse meat " id="qo">
+                        Horse meat
+                    </label>
+                </div>
+                <h3>Add:</h3>
+                <div class="qoshimchalar" id="add">
+                    <label for="add1">
+                        <input type="checkbox" value=" Pepper " id="add1">
+                        Pepper
+                    </label>
+                    <label for="add2">
+                        <input type="checkbox" value=" Sausages " id="add2">
+                        Sausages
+                    </label>
+                </div>
+                
+                <button type="button" onclick="myfun()" id="check">Order</button>
+            
+            <p class="dastavka">Yetkazib berish tekin!!!</p>
+            <div class="result"><hr>
+                <span>
+                    <p>Name: </p>
+                    <p id="name"></p>
+                </span>
+                <span>
+                    <p>Number: </p>
+                    <p id="number"></p>
+                </span>
+                <span>
+                    <p>Address: </p>
+                    <p id="addres"></p>
+                </span><hr>
+                <span>
+                    <p>Dough thickness: </p>
+                    <p id="sizes"></p>
+                </span>
+                
+                <span>
+                    <p>Size: </p>
+                    <p id="kattaligi"></p>
+                </span>
+                <span>
+                    <p>On Pizza: </p>
+                    <p id="ustuda1"></p>
+                </span>
+                <span>
+                    <p>Add: </p>
+                    <p id="qoshimcha"></p>
+                </span><hr>
+                <span>
+                    <p>Total price: $</p>
+                    <p id="pul"> </p>
+                </span> 
+            </div>
+        </div>
+        </div>
+    </main>
+    
+    <script src="./main.js"></script>
+</body>
+</html>
